@@ -1,0 +1,159 @@
+.container-cube{
+    position: absolute;
+    margin-top: auto;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cube-wraper{
+    position: absolute;
+    opacity: 0.1;
+    height: var(--cube_side);
+    width: var(--cube_side);
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 1000px;
+}
+.cube-wraper2{
+  position: absolute;
+  opacity: 0.1;
+  height: var(--cube_side);
+  width: var(--cube_side);
+  margin-left: auto;
+  margin-right: auto;
+  perspective: 1000px;
+  transform: scale(3.7);
+}
+svg{
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+text{
+  background-color: green;
+}
+.cube {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* transition: transform 1s; */
+    z-index: 2;
+  }
+  .cube2 {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .cube2 .face{
+    background-color: rgba(108, 82, 173, 0.486);
+    border: 1px solid rgba(82, 82, 82, 0);
+    box-shadow: inset 1px 1px 150px 1px rgb(81, 56, 109);
+    filter: blur(1px);
+    transition: background-color 0.7s linear;
+  }
+  .red{
+    background-color: rgba(194, 0, 0, 0.333)!important;
+    border: 1px solid rgb(230, 0, 50)!important;
+    box-shadow: inset 1px 1px 150px 1px rgb(187, 2, 73)!important;
+    filter: blur(1px);
+  }
+  .yellow{
+    background-color: rgba(133, 76, 1, 0.333)!important;
+    border: 1px solid rgba(255, 183, 50, 0.534)!important;
+    box-shadow: inset 1px 1px 150px 1px rgb(177, 144, 1)!important;
+    filter: blur(1px);
+  }
+  .green{
+    background-color: rgba(0, 179, 54, 0.333)!important;
+    border: 1px solid rgb(96, 196, 2)!important;
+    box-shadow: inset 1px 1px 150px 1px rgb(86, 177, 1)!important;
+    filter: blur(1px);
+  }
+  .blue{
+    background-color: rgba(5, 129, 179, 0.333)!important;
+    border: 1px solid rgba(0, 201, 228, 0.87)!important;
+    box-shadow: inset 1px 1px 150px 1px rgb(0, 195, 255)!important;
+    filter: blur(1px);
+  }
+  .purple{
+    background-color: rgba(85, 1, 133, 0.333)!important;
+    border: 1px solid rgb(124, 34, 241)!important;
+    box-shadow: inset 1px 1px 150px 1px rgb(171, 1, 177)!important;
+    filter: blur(1px);
+  }
+  .plain{
+    background-color: rgba(108, 82, 173, 0.486)!important;
+    border: 1px solid rgba(82, 82, 82, 0)!important;
+    box-shadow: inset 1px 1px 150px 1px rgb(81, 56, 109)!important;
+    filter: blur(1px);
+  }
+  .focus{
+    opacity: 0.6;
+    z-index: 10;
+  }
+  .focus img{
+    opacity: 1;
+  }
+ 
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* color: rgba(255, 255, 255, 0.205); */
+    color: aliceblue;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.301);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .face > span {
+    font-size: 15rem;
+  }
+  .face > p{
+  }
+  .face > img{
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    opacity: 0.1;
+  }
+  .cube > .face {
+  }
+  .top {
+    /* background-color: #FFD60080; */
+    transform: rotateX(90deg) translateZ(var(--half_cube_side));
+  }
+  .bottom {
+    /* background-color: #FFD60080; */
+    transform: rotateX(-90deg) translateZ(var(--half_cube_side));
+    filter: none;
+  }
+  .right {
+   /*  background-color: #00D6FF80; */
+    transform: rotateY(90deg) translateZ(var(--half_cube_side));
+  }
+  .left {
+   /*  background-color: #00D6FF80; */
+    transform: rotateY(-90deg) translateZ(var(--half_cube_side));
+  }
+  .front {
+    /* background-color: #D600FF80; */
+    transform: rotateX(0deg) translateZ(var(--half_cube_side));
+  }
+  .back {
+   /*  background-color: #d400ff80; */
+    transform: rotateX(-180deg) translateZ(var(--half_cube_side));
+  }
+  

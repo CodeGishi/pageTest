@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="HomePage" />
+		<meta name="keywords" content="HTML, CSS, JavaScript" />
+		<meta name="author" content="Jonatan Dalasinski" />
+		<link rel="icon" type="image/x-icon" href="fav2.png" />
+		<title>HomPage</title>
+
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;500;700&display=swap" rel="stylesheet" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<!-- jQuery 3.6 -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<!-- jQuery UI -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+			integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="hue.css" />
+		<link href="./index.css" rel="stylesheet" />
+		<link href="./cube.css" rel="stylesheet" />
+		<!-- Cusotm JS -->
+		<!-- <script src="./index.js"></script> -->
+	</head>
+	<body class="cosmos">
+		<div></div>
+		<div class="highlight"></div>
+		<div class="container-cube">
+			<div class="cube-wraper" id="wraper">
+				<div class="cube">
+					<div class="face top">
+						HOME
+						<!-- <span class="material-icons"> home </span> -->
+					</div>
+					<div class="face bottom center">
+						<!-- <span class="material-icons"> square_foot </span> -->
+						TOOLS
+					</div>
+					<div class="face front center">FRONT</div>
+					<div class="face back center">BACK</div>
+					<div class="face right center">RIGHT</div>
+					<div class="face left center">LEFT</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-cube">
+			<div class="cube-wraper2" id="wraper2">
+				<div class="cube2">
+					<div class="face front center"></div>
+					<div class="face back center"></div>
+					<div class="face right center"></div>
+					<div class="face left center"></div>
+					<div class="face top center"></div>
+					<div class="face bottom center"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse center" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#" id="btn-top">Top</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="btn-bottom">Bottom</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="btn-front">Front</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="btn-back">Back</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="btn-right">Right</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="btn-left">Left</a>
+					</li>
+				</ul>
+			</div>
+		</nav> -->
+		<nav id="navbar" class="navbar-light">
+			<div class="">
+				<ul>
+					<li>
+						<a href="#" id="btn-top" class="active">HOME</a>
+					</li>
+					<li>
+						<a href="#" id="btn-bottom">TOOLS</a>
+					</li>
+					<li>
+						<a href="#" id="btn-front">Front</a>
+					</li>
+					<li>
+						<a href="#" id="btn-back">Back</a>
+					</li>
+					<li>
+						<a href="#" id="btn-right">Right</a>
+					</li>
+					<li>
+						<a href="#" id="btn-left">Left</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="content-container" id="content-container">
+			<div class="card" id="sectiontop">
+				<p id="my-name">My name's Jonatan</p>
+				<h1 class="name">and I build <span class="websites">websites</span></h1>
+				<p class="about">
+					I'm a front-end developer who's keen on delivering great <i><b>look and feel</b></i
+					>.
+				</p>
+			</div>
+			<!-- <div class="card right"></div> -->
+
+			<div class="card tools" id="sectionbottom">
+				<div class="icons">
+					<img src="./logo/html.svg" alt="html" />
+					<img src="./logo/css.svg" alt="html" />
+					<img src="./logo/js.svg" alt="html" />
+					<img src="./logo/typescript.svg" alt="html" />
+
+					<img src="./logo/vue.svg" alt="html" />
+					<img src="./logo/jquery.svg" alt="html" />
+					<img src="./logo/sass.svg" alt="html" />
+					<img src="./logo/bootstrap.svg" alt="html" />
+
+					<img src="./logo/nodejs.svg" alt="html" />
+					<img src="./logo/apache.svg" alt="html" />
+					<img src="./logo/webpack.svg" alt="html" />
+					<img src="./logo/docker.svg" alt="html" />
+					<img src="./logo/git.svg" alt="html" />
+
+					<img src="./logo/photoshop.svg" alt="html" />
+					<img src="./logo/illustrator.svg" alt="html" />
+					<img src="./logo/inkscape.svg" alt="html" />
+					<img src="./logo/figma.svg" alt="html" />
+					<img src="./logo/vscode.svg" alt="html" />
+					<img src="./logo/elementary.svg" alt="html" />
+					<img src="./logo/windows.svg" alt="html" />
+
+					<!-- <img src="./logo/php.svg" alt="html" /> -->
+				</div>
+				<div class="text">
+					<h2>Tools for development</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam debitis officia ipsa, quaerat ullam beatae
+						consequatur maiores voluptatem enim vitae perferendis sed magnam! Beatae quas aut saepe, iure quis
+						doloremque.
+					</p>
+				</div>
+			</div>
+
+			<div class="card" id="sectionfront">
+				<h1>Lorem Ipsum</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam voluptatem, eaque molestias error tempore
+					aspernatur unde, numquam, ut aliquid laudantium placeat ipsam molestiae neque iure. Assumenda quam unde ullam!
+				</p>
+			</div>
+
+			<div class="card" id="sectionback">
+				<h1>Dolor amet</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam voluptatem, eaque molestias error tempore
+					aspernatur unde, numquam, ut aliquid laudantium placeat ipsam molestiae neque iure. Assumenda quam unde ullam!
+				</p>
+			</div>
+
+			<div class="card" id="sectionright">
+				<h1>Assumenda quam</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam voluptatem, eaque molestias error tempore
+					aspernatur unde, numquam, ut aliquid laudantium placeat ipsam molestiae neque iure. Assumenda quam unde ullam!
+				</p>
+			</div>
+
+			<div class="card" id="sectionleft">
+				<h1>Ut aliquid</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam voluptatem, eaque molestias error tempore
+					aspernatur unde, numquam, ut aliquid laudantium placeat ipsam molestiae neque iure. Assumenda quam unde ullam!
+				</p>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+		<script src="cubeAnimation.js"></script>
+	</body>
+</html>
